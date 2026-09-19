@@ -1,0 +1,28 @@
+<h1>Agregar nueva mascota</h1>
+
+<% if (error) { %>
+  <div role="alert"><%= error %></div>
+<% } %>
+
+<form action="/mascotas" method="post">
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" name="nombre" type="text" value="<%= valores.nombre || '' %>">
+
+  <label for="especie">Especie:</label>
+  <input id="especie" name="especie" type="text" value="<%= valores.especie || '' %>">
+
+  <label for="edad">Edad:</label>
+  <input id="edad" name="edad" type="number" value="<%= valores.edad || '' %>">
+
+  <label for="estado">Estado:</label>
+  <select id="estado" name="estado">
+    <option value="En adopción" <%= valores.estado === "En adopción" ? "selected" : "" %>>En adopción</option>
+    <option value="Reservada" <%= valores.estado === "Reservada" ? "selected" : "" %>>Reservada</option>
+    <option value="Adoptada" <%= valores.estado === "Adoptada" ? "selected" : "" %>>Adoptada</option>
+  </select>
+
+  <label for="descripcion">Descripción:</label>
+  <textarea id="descripcion" name="descripcion"><%= valores.descripcion || '' %></textarea>
+
+  <button type="submit">Guardar</button>
+</form>

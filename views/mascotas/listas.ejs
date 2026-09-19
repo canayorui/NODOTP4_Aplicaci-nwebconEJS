@@ -1,0 +1,19 @@
+<h1>Catálogo de mascotas</h1>
+
+<% if (mascotas.length === 0) { %>
+  <p>No hay mascotas disponibles en este momento.</p>
+<% } else { %>
+  <div class="grid">
+    <% mascotas.forEach(mascota => { %>
+      <div class="card">
+        <h2><%= mascota.nombre %></h2>
+        <p>Especie: <%= mascota.especie %></p>
+        <p>Edad: <%= mascota.edad %> años</p>
+        <p>Estado: <%= mascota.estado %></p>
+        <a href="/mascotas/<%= mascota.id %>">Ver detalle</a>
+      </div>
+    <% }) %>
+  </div>
+<% } %>
+
+<a href="/mascotas/nueva">Agregar nueva mascota</a>
