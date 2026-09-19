@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "especie": "Perro",
+    "descripcion": "Cachorra juguetona y cariñosa.",
+    "edad": 2,
+    "estado": "En adopción",
+    "imagen": "/img/mascota.svg"
+  },
+  {
+    "id": 2,
+    "nombre": "Michi",
+    "especie": "Gato",
+    "descripcion": "Gato tranquilo y dormilón.",
+    "edad": 3,
+    "estado": "Reservada",
+    "imagen": "/img/mascota.svg"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "nodo_tp4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "check": "node --check src/index.js src/archivos.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canayorui/NODOTP4_Aplicaci-nwebconEJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canayorui/NODOTP4_Aplicaci-nwebconEJS/issues"
+  },
+  "homepage": "https://github.com/canayorui/NODOTP4_Aplicaci-nwebconEJS#readme",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}
