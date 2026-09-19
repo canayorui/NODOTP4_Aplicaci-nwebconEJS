@@ -1,0 +1,104 @@
+/* Tipografía y colores generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Navegación */
+nav {
+  background: #444;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Grilla adaptable */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas de mascotas */
+.card {
+  background: #eee;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card h2 {
+  margin-top: 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+input, select, textarea, button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background: #0066cc;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  background: #004999;
+}
+
+/* Mensaje de error */
+[role="alert"] {
+  background: #ffdddd;
+  color: #a00;
+  padding: 10px;
+  border: 1px solid #a00;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #444;
+  color: #fff;
+  margin-top: 20px;
+}
